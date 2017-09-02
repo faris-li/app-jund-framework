@@ -1,4 +1,4 @@
-package com.jund.framework.jpa.base.repository;
+package com.jund.framework.core.base.repository;
 
 /**
  * Created by zhijund on 2017/9/2.
