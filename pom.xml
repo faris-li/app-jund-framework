@@ -3,13 +3,6 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <modules>
-        <module>app-cloud-framework-core</module>
-        <module>app-cloud-framework-mvc</module>
-        <module>app-cloud-framework-jpa</module>
-        <module>app-cloud-framework-security</module>
-        <module>app-cloud-framework-testcase</module>
-    </modules>
 
     <parent>
         <groupId>com.jund.parent</groupId>
@@ -21,5 +14,13 @@
     <artifactId>app-cloud-framework</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0</version>
+
+    <modules>
+        <module>app-cloud-framework-core</module>
+        <module>app-cloud-framework-mvc</module>
+        <module>app-cloud-framework-jpa</module>
+        <module>app-cloud-framework-security</module>
+        <module>app-cloud-framework-testcase</module>
+    </modules>
 
 </project>
