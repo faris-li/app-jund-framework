@@ -1,4 +1,4 @@
-package com.jund.framework.jpa.config;
+package com.jund.framework.mvc.filter;
 
 /**
  * Created by zhijund on 2017/9/2.
