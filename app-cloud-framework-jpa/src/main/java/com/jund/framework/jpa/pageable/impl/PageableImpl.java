@@ -1,5 +1,6 @@
-package com.jund.framework.jpa.pageable;
+package com.jund.framework.jpa.pageable.impl;
 
+import com.jund.framework.jpa.pageable.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.domain.Sort.Direction;
 import org.springframework.data.domain.Sort.Order;
@@ -8,7 +9,9 @@ import org.springframework.util.Assert;
 import java.util.ArrayList;
 import java.util.List;
 
-
+/**
+ * Created by zhijund on 2017/9/3.
+ */
 public class PageableImpl implements Pageable {
 
     /**
