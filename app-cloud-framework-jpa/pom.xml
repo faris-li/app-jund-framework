@@ -18,6 +18,10 @@
             <artifactId>app-cloud-framework-core</artifactId>
             <version>1.0.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+        </dependency>
     </dependencies>
-    
+
 </project>
