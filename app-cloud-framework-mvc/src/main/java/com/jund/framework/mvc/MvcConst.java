@@ -10,4 +10,9 @@ public class MvcConst {
         public static final String EXP = "/exp";
     }
 
+    public static class ReturnCode{
+        public static final String OK = "0000";
+        public static final String ERROR = "1111";
+    }
+
 }
