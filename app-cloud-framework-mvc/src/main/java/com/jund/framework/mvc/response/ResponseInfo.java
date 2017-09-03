@@ -14,11 +14,15 @@ public class ResponseInfo<T> {
     private T data;
 
     public ResponseInfo() {
-        this(MvcConst.ReturnCode.OK, "成功", null);
+        this(MvcConst.ReturnCode.OK,null);
+    }
+
+    public ResponseInfo(T data) {
+        this(MvcConst.ReturnCode.OK,  data);
     }
 
     public ResponseInfo(String code, T data) {
-        this(MvcConst.ReturnCode.OK, "成功", data);
+        this(code, "成功", data);
     }
 
     public ResponseInfo(String code, String message, T data) {
@@ -26,6 +30,5 @@ public class ResponseInfo<T> {
         this.message = message;
         this.data = data;
     }
-
 
 }
