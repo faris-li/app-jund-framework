@@ -1,7 +1,7 @@
 package com.jund.framework.jpa.base.entity;
 
 import com.jund.framework.core.entity.AbstractEntity;
-import org.springframework.context.annotation.Description;
+import org.springframework.data.rest.core.annotation.Description;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
