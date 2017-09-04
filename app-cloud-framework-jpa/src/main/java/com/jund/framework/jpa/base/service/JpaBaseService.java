@@ -1,29 +1,27 @@
 package com.jund.framework.jpa.base.service;
 
-import com.jund.framework.jpa.pageable.Page;
-import com.jund.framework.jpa.pageable.Pageable;
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 import java.io.Serializable;
 import java.util.List;
-import java.util.Map;
 
 /**
  * Created by zhijund on 2017/9/3.
  */
 public interface JpaBaseService<T, PK extends Serializable> {
 
-    T query(PK id, String... fetchFields);
+    List<T> findAll();
 
-    List<T> queryAll();
+    Page<T> findAll(Example<T> example, Pageable pageable);
 
-    Page<T> queryForPage(Pageable pageable, Map<String, Object> params);
+    T findOne(PK id);
 
-    List<T> queryForList(Map<String, Object> map);
+    void delete(PK... ids);
 
-    T save(T entity);
+    void deleteOne(PK id);
 
-    void remove(PK... ids);
-
-    boolean exists(Map<String, Object> map);
+    boolean exists(Example<T> example);
 
 }

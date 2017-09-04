@@ -2,15 +2,15 @@ package com.jund.framework.jpa.base.service.impl;
 
 import com.jund.framework.jpa.base.repository.BaseRepository;
 import com.jund.framework.jpa.base.service.JpaBaseService;
-import com.jund.framework.jpa.pageable.Page;
-import com.jund.framework.jpa.pageable.Pageable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.io.Serializable;
 import java.util.List;
-import java.util.Map;
 
 /**
  * Created by zhijund on 2017/9/3.
@@ -18,44 +18,33 @@ import java.util.Map;
 public abstract class JpaBaseServiceImpl<T, PK extends Serializable> implements JpaBaseService<T, PK> {
     protected final Logger LOGGER = LoggerFactory.getLogger(getClass());
 
-    protected abstract BaseRepository<T, PK> getRepository();
-
-    @Override
-    public List<T> queryAll() {
+    public List<T> findAll() {
         return getRepository().findAll();
     }
 
-    @Override
-    public Page<T> queryForPage(Pageable pageable, Map<String, Object> map) {
-        //return getRepository().findAll(pageable, map);
-        return null;
+    public Page<T> findAll(Example<T> example, Pageable pageable) {
+        return getRepository().findAll(example, pageable);
     }
 
-    @Override
-    public List<T> queryForList(Map<String, Object> map) {
-        return getRepository().findAll(map);
-    }
-
-    @Override
-    public T query(PK id, String... fetchFields) {
+    public T findOne(PK id) {
         return getRepository().findOne(id);
     }
 
-    @Override
     @Transactional
-    public T save(T entity) {
-        return getRepository().save(entity);
+    public void deleteOne(PK id) {
+        getRepository().delete(id);
+    }
+
+    @Transactional
+    public void delete(PK... ids) {
+        getRepository().delete(ids);
     }
 
     @Override
-    @Transactional
-    public void remove(PK... ids) {
-        getRepository().remove(ids);
+    public boolean exists(Example<T> example) {
+        return getRepository().exists(example);
     }
 
-    @Override
-    public boolean exists(Map<String, Object> map) {
-        return getRepository().exists(map);
-    }
+    protected abstract BaseRepository<T, PK> getRepository();
 
 }
