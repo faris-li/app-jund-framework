@@ -14,7 +14,32 @@ public class AccessToken {
     private String serverIp;
 
     public AccessToken(OAuth2AuthenticationDetails details){
-
+        this.token = details.getTokenValue();
+        this.tokenType = details.getTokenType();
+        this.serverIp = details.getRemoteAddress();
     }
 
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
+
+    public String getTokenType() {
+        return tokenType;
+    }
+
+    public void setTokenType(String tokenType) {
+        this.tokenType = tokenType;
+    }
+
+    public String getServerIp() {
+        return serverIp;
+    }
+
+    public void setServerIp(String serverIp) {
+        this.serverIp = serverIp;
+    }
 }

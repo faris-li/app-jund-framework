@@ -7,7 +7,7 @@ public class SecConst {
     public static class AuthReturnCode {
         public static final String TOKEN_NOFOUND = "2001";
         public static final String AUTH_TYPE_ERROR = "2002";
-        public static final String AUTHORIZED = "2003";
+        public static final String UNAUTHORIZED = "2003";
     }
 
     public static class Token {
