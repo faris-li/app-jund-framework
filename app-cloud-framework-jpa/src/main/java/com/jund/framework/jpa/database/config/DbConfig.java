@@ -1,6 +1,7 @@
 package com.jund.framework.jpa.database.config;
 
 import com.jund.framework.core.exception.JundRuntimeException;
+import com.jund.framework.core.util.DESUtil;
 import com.jund.framework.jpa.JpaConst;
 import com.jund.framework.jpa.base.repository.factory.BaseRepositoryFactoryBean;
 import com.jund.framework.jpa.database.DialectFactory;
@@ -76,7 +77,7 @@ public class DbConfig {
     }
 
     private String encryptPassword() {
-        return (dbSettings.isEncrypted()) ? DESUtil.getDescriptString(dbSettings.getPassword()) : dbSettings.getPassword();
+        return (dbSettings.isEncrypted()) ? DESUtil.getDecryptString(dbSettings.getPassword()) : dbSettings.getPassword();
     }
 
     private DataSource c3p0DataSource() {
