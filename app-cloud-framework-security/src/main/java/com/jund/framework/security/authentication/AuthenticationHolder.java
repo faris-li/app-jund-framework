@@ -36,7 +36,7 @@ public class AuthenticationHolder {
         }
     }
 
-    public static String getUseranme(){
+    public static String getUsernanme(){
         return getAuthUser().getUsername();
     }
 
