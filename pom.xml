@@ -20,7 +20,7 @@
         <module>app-jund-framework-mvc</module>
         <module>app-jund-framework-jpa</module>
         <module>app-jund-framework-security</module>
-        <module>app-jund-framework-testcase</module>
+        <module>app-jund-framework-test</module>
     </modules>
 
     <build>
