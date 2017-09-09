@@ -1,4 +1,4 @@
-package com.jund.framework.testcase.suite;
+package com.jund.framework.test.suite;
 
 import org.junit.Before;
 import org.junit.Test;

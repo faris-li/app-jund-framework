@@ -1,4 +1,4 @@
-package com.jund.framework.testcase;
+package com.jund.framework.test;
 
 /**
  * Created by zhijund on 2017/9/2.

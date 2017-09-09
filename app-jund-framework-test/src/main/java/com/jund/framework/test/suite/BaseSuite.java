@@ -1,4 +1,4 @@
-package com.jund.framework.testcase.suite;
+package com.jund.framework.test.suite;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.runner.RunWith;
