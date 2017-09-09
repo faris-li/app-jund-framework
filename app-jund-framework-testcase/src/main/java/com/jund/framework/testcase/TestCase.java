@@ -3,7 +3,7 @@ package com.jund.framework.testcase;
 /**
  * Created by zhijund on 2017/9/2.
  */
-public abstract class TestaCase {
+public abstract class TestCase {
 
     abstract void testPage() throws Exception;
 

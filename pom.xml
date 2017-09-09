@@ -6,21 +6,21 @@
 
     <parent>
         <groupId>com.jund.parent</groupId>
-        <artifactId>app-cloud-parent</artifactId>
+        <artifactId>app-jund-parent</artifactId>
         <version>1.0.0</version>
     </parent>
 
     <groupId>com.jund.framework</groupId>
-    <artifactId>app-cloud-framework</artifactId>
+    <artifactId>app-jund-framework</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0</version>
 
     <modules>
-        <module>app-cloud-framework-core</module>
-        <module>app-cloud-framework-mvc</module>
-        <module>app-cloud-framework-jpa</module>
-        <module>app-cloud-framework-security</module>
-        <module>app-cloud-framework-testcase</module>
+        <module>app-jund-framework-core</module>
+        <module>app-jund-framework-mvc</module>
+        <module>app-jund-framework-jpa</module>
+        <module>app-jund-framework-security</module>
+        <module>app-jund-framework-testcase</module>
     </modules>
 
     <build>

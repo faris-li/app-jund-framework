@@ -5,12 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <artifactId>app-cloud-framework</artifactId>
+        <artifactId>app-jund-framework</artifactId>
         <groupId>com.jund.framework</groupId>
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>app-cloud-framework-core</artifactId>
+    <artifactId>app-jund-framework-core</artifactId>
 
     <dependencies>
         <dependency>

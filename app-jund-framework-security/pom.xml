@@ -10,29 +10,25 @@
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>app-cloud-framework-testcase</artifactId>
+    <artifactId>app-cloud-framework-security</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>com.jund.framework</groupId>
-            <artifactId>app-cloud-framework-jpa</artifactId>
+            <artifactId>app-jund-framework-mvc</artifactId>
             <version>1.0.0</version>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-oauth2</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-feign</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-security</artifactId>
         </dependency>
     </dependencies>
 

@@ -5,38 +5,42 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <artifactId>app-cloud-framework</artifactId>
+        <artifactId>app-jund-framework</artifactId>
         <groupId>com.jund.framework</groupId>
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>app-cloud-framework-mvc</artifactId>
+    <artifactId>app-jund-framework-jpa</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>com.jund.framework</groupId>
-            <artifactId>app-cloud-framework-core</artifactId>
+            <artifactId>app-jund-framework-core</artifactId>
             <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger2</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-rest</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.jeecg</groupId>
-            <artifactId>easypoi-base</artifactId>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.jeecg</groupId>
-            <artifactId>easypoi-web</artifactId>
+            <groupId>com.mchange</groupId>
+            <artifactId>c3p0</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.jeecg</groupId>
-            <artifactId>easypoi-annotation</artifactId>
+            <groupId>commons-dbcp</groupId>
+            <artifactId>commons-dbcp</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-envers</artifactId>
         </dependency>
     </dependencies>
 
