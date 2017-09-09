@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * Created by zhijund on 2017/9/3.
  */
-public interface JpaBaseService<T, PK extends Serializable> {
+public interface BaseService<T, PK extends Serializable> {
 
     List<T> findAll();
 

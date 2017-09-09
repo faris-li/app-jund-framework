@@ -1,7 +1,7 @@
 package com.jund.framework.jpa.base.service.impl;
 
 import com.jund.framework.jpa.base.repository.BaseRepository;
-import com.jund.framework.jpa.base.service.JpaBaseService;
+import com.jund.framework.jpa.base.service.BaseService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Example;
@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * Created by zhijund on 2017/9/3.
  */
-public abstract class JpaBaseServiceImpl<T, PK extends Serializable> implements JpaBaseService<T, PK> {
+public abstract class BaseServiceImpl<T, PK extends Serializable> implements BaseService<T, PK> {
     protected final Logger LOGGER = LoggerFactory.getLogger(getClass());
 
     public List<T> findAll() {
