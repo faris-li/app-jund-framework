@@ -1,6 +1,6 @@
 package com.jund.framework.mvc.response;
 
-import com.jund.framework.mvc.RestConst;
+import com.jund.framework.core.Const;
 
 /**
  * Created by zhijund on 2017/9/3.
@@ -14,11 +14,11 @@ public class ResponseInfo<T> {
     private T data;
 
     public ResponseInfo() {
-        this(RestConst.ReturnCode.OK,null);
+        this(Const.ReturnCode.OK,null);
     }
 
     public ResponseInfo(T data) {
-        this(RestConst.ReturnCode.OK,  data);
+        this(Const.ReturnCode.OK,  data);
     }
 
     public ResponseInfo(String code, T data) {
