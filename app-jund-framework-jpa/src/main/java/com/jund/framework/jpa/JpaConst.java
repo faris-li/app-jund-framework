@@ -10,6 +10,10 @@ public abstract class JpaConst {
         public static final String DATABASE_INITIAL = "3001";
         public static final String DATABASE_POOL_TYPE = "3002";
         public static final String DATABASE_CONNECTION = "3003";
+
+        public static final String CHECK_CODE_UNIQUE = "3004";
+
+        public static final String CHECK_NOT_DELETE = "3005";
     }
 
     public static class Database {
